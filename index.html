@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<title>导航页面</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<link type="text/css" href="css/humanity/jquery-ui-1.8.18.custom.css" rel="stylesheet" />
+</head>
+<body>
+	<div id="page1">
+		<h1><span>中转站</span><img src="images/star.png" alt=""></h1>
+		<h2> lalala </h2>
+			<div class="container_12">
+				<div class="wrapper">
+					<div class="grid_4">
+						<div class="box">
+							<div class="dropcap1"><img src="images/page_img1.png" alt=""><span>NAS</span></div>
+							<ul class="list-1">
+								<li><a href="http://jump.pixelcat.top:5000/" target="_blank" rel="noopener noreferrer">管理页面</a></li>
+								<li><a href="http://jump.pixelcat.top:5003/" target="_blank" rel="noopener noreferrer">Transmission</a></li>
+								<li><a href="http://jump.pixelcat.top:5002/" target="_blank" rel="noopener noreferrer">h5ai</a></li>
+								<li><a href="http://jump.pixelcat.top:5000/qcenter/" target="_blank" rel="noopener noreferrer">Q'center</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="dropcap"><img src="images/page_img2.png" alt=""><span>ROUTER</span></div>
+							<ul class="list-1">
+								<li><a href="https://jump.pixelcat.top:8443/" target="_blank" rel="noopener noreferrer">管理页面</a></li>
+								<li><a href="http://jump.pixelcat.top:4200/" target="_blank" rel="noopener noreferrer">Shell In A Box</a></li>
+								<li><a href="#">ali-ddns</a></li>
+								<li><a href="#">N/A</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="grid_4">
+						<div class="box">
+							<div class="dropcap"><img src="images/page_img3.png" alt=""><span>ECS</span></div>
+							<ul class="list-1">
+								<li><a href="https://ecs-cn-zhangjiakou.console.aliyun.com/">管理页面</a></li>
+								<li><a href="https://www.pixelcat.top/">WordPress</a></li>
+								<li><a href="http://www.pixelcat.top:9999/ralph_ren">宝塔</a></li>
+								<li><a href="#">N/A</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="textbox">
+			<div>
+			  <p>修改或设置aliddns.conf参数：</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh setconf</p>
+			  <p>检测aliddns.conf所有域名是否成功解析：</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh check 0</p>
+			  <p>增加或更新aliddns.conf所有域名:</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh restart</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh restart 0</p>
+			  <p>设置aliddns.conf所有域名解析记录为启用:</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh status 0 1</p>
+			  <p>显示日志：</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh showlog</p>
+			</div>
+			<div>
+			  <p>删除aliddns.conf所有域名:</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh remove 0</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh removeall</p>
+			  <p>设置aliddns.conf所有域名解析记录为启用:</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh status 0 1</p>
+			  <p>设置aliddns.conf所有域名解析记录为禁用:</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh status 0 0</p>
+			  <p>检测客户端状态：</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh client ipv4</p>
+			  <p>sh /jffs/myscripts/sharealiddns/etc/init.d/sharealiddns.sh client ipv6</p>
+			  <p>fin</p>
+			</div>
+			</div>
+			<footer>No Copyrights @2020</footer>
+	</div>
+</html>
