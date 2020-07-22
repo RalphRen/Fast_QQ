@@ -1,19 +1,50 @@
 @import"../css/reset.css";@import"../css/grid.css";
 @import url(http://fonts.googleapis.com/css?family=Oswald);
 @import url(http://fonts.googleapis.com/css?family=Playball);
-body{background:#fff url(../images/bg_main.jpg) 0 0 repeat;font:13px/22px Arial, Helvetica, sans-serif;color:#7a6d6b;position:relative;min-width:980px;}
-html,body{height:100%;}
-p{padding-bottom:22px}
-a{color:#ee5e3d;outline:none;cursor:pointer;text-decoration:none;}
-a:hover{text-decoration: underline}
+body{
+	background:#fff url(../images/bg_main.jpg) 0 0 repeat;
+	font:13px/22px Arial, Helvetica, sans-serif;
+	color:#7a6d6b;
+	min-width:980px;
+	z-index:5;
+}
+html,body{
+	height:100%;
+}
+p{
+	padding-bottom:22px
+}
+a{
+	color:#ee5e3d;outline:none;cursor:pointer;text-decoration:none;
+}
+a:hover{
+	text-decoration: underline
+}
 /*  Header styles */
-h1{font-size:30px;}
-h2{font-size:70px; line-height:84px; color:#67a1b1; font-family:'黑体', cursive; font-weight:400; letter-spacing:-2px;}
-	h2 span{ display:inline-block; background:url(../images/star.png)  0 38px no-repeat; padding:0 0 0 45px;}
-	h2 img{ margin:38px 0 0 27px;}
-h3{ color:#3f2724; font:400 30px/70px 'Oswald', sans-serif; letter-spacing:-1px;} 
-h4{ font:bold 11px/22px Arial, Helvetica, sans-serif; text-transform:uppercase; color:#ee5e3d;}
-/* Global Structure---------------------------------------- */
+h1{
+	font-size:70px;
+	line-height:84px;
+	color:#67a1b1;
+	font-family:'黑体', cursive;
+	font-weight:400;
+	letter-spacing:-2px;
+}
+		h1 span{
+			display:inline-block;
+			background:url(../images/star.png)  0 38px no-repeat;
+			padding:0 0 0 45px;
+		}
+		h1 img{
+			margin:38px 0 0 27px;
+		}
+h2{
+	color:#3f2724;font-size:30px;
+}
+h3{
+	font:bold 11px/22px Arial, Helvetica, sans-serif;
+	text-transform:uppercase; color:#ee5e3d;
+}
+
 /*----- txt,links,lines,titles -----*/
 .clear{clear:both;line-height:0;font-size:0;overflow:hidden;height:0;width:100%;}
 .wrapper{width:100%;overflow:hidden;position:relative;}
@@ -25,126 +56,98 @@ h4{ font:bold 11px/22px Arial, Helvetica, sans-serif; text-transform:uppercase; 
 .alignmiddle *{vertical-align:middle}
 .color1{color:#ee5e3d;}
 .tlinks{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
-/*********************************header*************************************/
-header{ width:520px; position: relative; z-index:10; margin:0 auto;}
-header h1{ padding:54px 0 0 120px;}
-header h1 a{ display:block; background:url(../images/logo.png) 0 0 no-repeat; width:277px; height:84px; text-indent:-5000px;}
-.main-menu{ padding:50px 0 0 1px;}
-.sf-menu, .sf-menu * {margin:0;padding:0;list-style:none;}
-.sf-menu{ position:relative;}
-	.sf-menu li{ position:relative; float:left; margin:0 1px;border-radius:50%;background:#67a1b1;width:128px; height:128px;
-	-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
-	.sf-menu li.last{ margin-right:0;}
-	.sf-menu li a{ display:block;  text-align:center;  position:relative;}
-	.sf-menu li a img{ margin-top:38px;}
-	.sf-menu li.menu3 a img{ margin-left:6px;}
-		.sf-menu li.current,.sf-menu li.sfHover,.sf-menu li:hover{ background:#ee5e3d;}
-.sf-menu ul {
-	position:		absolute;
-	top:			-999em;
-	z-index:		99;
-	width:			117px; 
-	display:none;
-	background:#ee5e3d;
-	border-radius:10px;
-	padding:12px 0;
-}
-.sf-menu li li{ width:100%;padding:0; margin:0; height:auto; background:none;}
-.sf-menu li li:first-child span{ display:block;  background:url(../images/menu-arrow.png) 0 0 no-repeat; width:11px; height:14px; position:absolute; top:-26px; left:34px;}
-.sf-menu li li a,.sf-menu li.sfHover li a,.sf-menu li.current li a{display:block; background:#ee5e3d; width:auto; height:auto; border-radius:0; color:#fff; text-transform:uppercase; font:14px/1.2em 'Oswald', sans-serif; padding:10px 0;}
-.sf-menu li li a:hover,.sf-menu li li.sfHover a,.sf-menu li li.current a{ background:#3f2724; text-decoration:none;}
-.sf-menu ul ul {
-	position:		absolute;
-	top:			-999em;
-	z-index:		99;
-	width:			117px; 
-	display:none;
-	background:#3f2724;
-	border-radius:10px;
-	padding:12px 0;
-}
-	.sf-menu li li li{ width:100%;padding:0; margin:0;}
-	.sf-menu li li li a,.sf-menu li li.sfHover li a,.sf-menu li li.current li a{background:#3f2724;}
-	.sf-menu li li li a:hover,.sf-menu li li li.sfHover a,.sf-menu li li li.current a{ background:#67a1b1; text-decoration:none;}
-.sf-menu li:hover ul,
-.sf-menu li.sfHover ul {
-	left:			14px;
-	top:			139px; /* match top ul list item height */
-}
-ul.sf-menu li:hover li ul,
-ul.sf-menu li.sfHover li ul {
-	top:			-999em;
-}
-ul.sf-menu li li:hover ul,
-ul.sf-menu li li.sfHover ul {
-	left:			120px; /* match ul width */
-	top:			-12px;
-}
-ul.sf-menu li li:hover li ul,
-ul.sf-menu li li.sfHover li ul {
-	top:			-999em;
-}
-ul.sf-menu li li li:hover ul,
-ul.sf-menu li li li.sfHover ul {
-	left:			10em; /* match ul width */
-	top:			00px;
-}
+
 /********************** Content ************************/
-section{ position:relative; z-index:5;}
-#page1,#page2,#page3,#page4,#page5{ width:960px; margin:0 auto; text-align:center; position:relative; margin-bottom:125px;}
-#page5{ margin-bottom:0;padding:114px 0 48px 0;}
-#page1{ padding-bottom:72px;}
-#page2{ padding:118px 0 58px 0;}
-#page3,#page4{ padding:114px 0 0 0;}
-#bg-page5{}
-	#page3 h3{ text-transform:uppercase; padding:23px 0 0 0;}
-	#page3 h3 span{ display:block; margin-top:-30px;}
-.title{ text-transform:uppercase; color:#3f2724; font:40px/70px 'Oswald', sans-serif; padding:72px 0 0 0; letter-spacing:-1px;}
-.title2{ font:170px/204px 'Playball', cursive; color:#ee5e3d; margin-top:-66px;}
-	.title2 span{ display:block; margin-top:-104px;}
-.text1{ padding:9px 0 0 0;}
-.box1{ padding:36px 0 0 0;}
-	.box1 h3{ margin-top:-2px;}
-	.box1 h4{ margin-top:-12px;}
-	.box1 p{ padding:18px  25px 0;}
-.box2{ padding:15px 0 0 0;}
-.dropcap{ font:30px/70px 'Oswald', sans-serif; display:inline-block; color:#fff; width:188px; height:188px; border-radius:50%; background:#ee5e3d; position:relative; overflow:hidden;}
-	.dropcap img{ margin:25px 0 0 0;}
-	.dropcap span{ display:block; margin-top:-13px;}
-.list-1{ position:relative; padding:15px 50px 47px;}
-	.list-1 li{ position:relative; background:url(../images/border-bottom.png) 0 0 repeat-x;  text-transform:uppercase; font-size:12px;}
-	.list-1 li:first-child{ background:none;}
-	.list-1 li a{ color:#5f5250; display:block;padding:9px 0; border-radius:5px;
-	-webkit-transition:all 0.5s ease;-moz-transition:all 0.5s ease;-o-transition:all 0.5s ease;transition:all 0.5s ease;}
-	.list-1 li a:hover{ text-decoration:none; color:#fff; background:#ee5e3d;}
-.map{ background:url(../images/map_bg.png) 0 0 no-repeat;width:348px;height:245px; padding:20px; margin:33px 93px 0 12px;}
-	.map iframe{ width:348px; height:228px;}
-#slide { width:568px; height:357px; position:relative; z-index:2;margin:49px 0 0 192px; background:#fff; padding:8px;box-shadow:1px 2px 3px rgba(155,133,129,.9);}
+/*section{ position:relative; z-index:5;}*/
+#page1{
+	width:960px;
+	margin:0 auto;
+	text-align:center;
+	position:relative;
+	margin-bottom:125px;
+	padding-bottom:72px;
+}
+.text1{
+	padding:9px 0 0 0;
+}
+.box{
+	padding:15px 0 0 0;
+}
+.dropcap{
+	font:30px/70px 'Oswald', sans-serif;
+	display:inline-block; color:#fff;
+	width:188px; height:188px;
+	border-radius:50%;
+	background:#ee5e3d;
+	position:relative;
+	overflow:hidden
+}
+	.dropcap img{
+		margin:25px 0 0 0;
+	}
+	.dropcap span{
+		display:block;
+		margin-top:-20px;
+	}
+.dropcap1{
+	font:30px/70px 'Oswald', sans-serif;
+	display:inline-block; color:#fff;
+	width:188px; height:188px;
+	border-radius:50%;
+	background:#ee5e3d;
+	position:relative;
+	overflow:hidden
+}
+	.dropcap1 img{
+		margin:25px 0 0 0;
+	}
+	.dropcap1 span{
+		display:block;
+		margin-top:-17px;
+	}
+.list-1{
+	position:relative;
+	padding:15px 50px 47px;
+}
+	.list-1 li{
+		position:relative;
+		background:url(../images/border-bottom.png) 0 0 repeat-x;
+		text-transform:uppercase;
+		font-size:12px;
+	}
+	.list-1 li:first-child{
+		background:none;
+	}
+	.list-1 li a{
+		color:#5f5250;
+		display:block;padding:9px 0;
+		border-radius:5px;
+	}
+	.list-1 li a:hover{
+		text-decoration:none;
+		color:#fff;
+		background:#ee5e3d;
+	}
 
-.cloud1{position:absolute; top:100px; left:200px; background: url(../images/cloud1.png) 50% 0 no-repeat; width:1195px; height:497px;}
-.cloud2{position:absolute; top:1000px; left:0px; background: url(../images/cloud2.png) 50% 0 no-repeat; width:976px; height:288px;}
-.cloud3{position:absolute; top:1900px; right:0px; background: url(../images/cloud3.png) 50% 0 no-repeat; width:1470px; height:944px;}
-.cloud4{position:absolute; top:3100px; left:10px; background: url(../images/cloud1.png) 50% 0 no-repeat; width:1195px; height:497px;}
+/******************** textbox ******************/
+	#textbox{
+	  text-align: center;
+	}
+	#textbox div{
+	  margin: 50px auto;
+	  background: #9BD1FA;
+	  border-width: 5px;
+	  border-style: solid;
+	  border-radius: 25px;
+	  border-color: #67a1b1;
+	  display: inline-block;
+	}
+	#textbox p{
+		margin: 10px 10px ;
+		padding: 0px;
+	  font-size:13px;
+		color:#000000;
+	}
 
-.clouds{ position:relative; background:url(../images/bg_1.jpg) 50% 0 no-repeat; width:100%; z-index:1;}
-.city-bg{background:url(../images/bg_city.jpg) 50% 100% no-repeat; width:100%;}
 /******************** Footer ******************/
 footer{ text-align:center; padding:54px 0 0 0; font:11px/22px Arial, Helvetica, sans-serif; color:#5f5250; text-transform:uppercase;}
-footer h1{ padding-bottom:3px;}
-footer h1 a{ display:inline-block; background:url(../images/footer-logo.png) 0 0 no-repeat; width:177px; height:43px; text-indent:-5000px;}
-footer a{ color:#5f5250;}
-footer span{ margin:0 3px;}
-/* padding */
-/*==========================================*/
-@media only screen and (max-width:1370px) {
-	.birds_1{ position:absolute; top:57px; left:28px;}
-	.cloud1{ width:1000px;}
-}
-@media only screen and (max-width:1030px) {
-	.cloud1,.cloud2,.cloud4{ width:900px;}
-	.cloud3{ width:100%;}
-	.balloon_5{ top:3650px;}
-	.birds_6{ position:absolute; top:3670px; right:50px;}
-}
-/* Project specifics =========================================================== */
-/* Pour some CSS below ========================================================= */
